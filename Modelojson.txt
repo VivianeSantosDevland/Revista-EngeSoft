@@ -1,0 +1,93 @@
+﻿Exemplos usando o Postman
+Body, no formato Json
+
+
+
+
+Salvando Tema
+{
+    "descricaoTema":"Frameworks para softwares de grande porte"
+}
+////////////////////////////
+Salvando edição 
+{
+    "volume":"001",
+    "numero":"001",
+    "mes":"07",
+    "ano":"2022",
+    "idTema":"1"
+}
+/////////////////////////////
+
+Salvando Autor
+{
+    "nome":"Maria",
+    "email":"maria@gmail.com",
+    "nomeInstituicao":"UFBA",
+    "enderecoInstituicao":"SALVADOR"
+}
+///////////////////////////
+
+
+Salvando Artigo
+
+ {
+      "titulo":"Software de médio porte",
+      "arquivoArtigo":"testandoo",
+      "autores":[
+      {  
+        "id" :"10"
+      },{
+          "id":"8"
+      }
+      ],
+          "edicao":{
+              "id":"2"
+          }
+ }
+
+/////////////
+Salvando Avaliador
+{
+    "nome":"Mekita",
+    "email":"mekita@hotmail.com",
+    "temas":
+    [{
+        "id":"1"
+    }
+    ]
+}
+
+//////////////////
+Salvando Avaliação
+
+{
+    "originalidade":"10",
+    "conteudo":"8",
+    "apresentacao":"8",
+    "status":"Avaliado",
+    "avaliador":
+    {
+        "id":"7"
+    },
+    "artigo":{
+            "id":"6"
+            }       
+}
+////////////////////////
+Salvando Seleção
+
+{
+    "avaliadorChefe":
+    {
+        "id":"7"
+    },
+    "artigosAvaliados":[
+        {
+            "id":"8"
+        }
+    ],
+    "edicao":{
+        "id":"2"
+    }
+}
